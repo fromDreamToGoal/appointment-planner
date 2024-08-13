@@ -10,7 +10,7 @@ export const ContactsPage = ({contacts, addContact}) => {
   const [isDuplicate, setIsDuplicate] = useState(false);
 
   useEffect(() => {
-    if (name) {
+    if (name && contacts) {
       setIsDuplicate(contacts.some((contact) => contact.name === name));
     } else {
       setIsDuplicate(false);
