@@ -32,12 +32,12 @@ export const ContactsPage = ({contacts, addContact}) => {
     <div>
       <section>
         <h2>Add Contact</h2> 
-        <ContactForm 
-          name={name} 
-          phone={phone} 
-          email={email} 
-          setName={setName} 
-          setPhone={setPhone} 
+        <ContactForm
+          name={name}
+          setName={setName}
+          phone={phone}
+          setPhone={setPhone}
+          email={email}
           setEmail={setEmail} 
           handleSubmit={handleSubmit} />
       </section>
